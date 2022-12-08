@@ -1,0 +1,5 @@
+   
+2021/06/28 00:42:18 [error] 958#958: *39313 open() "/home/megaspeed/django-apps/gateway/.well-known/security.txt" failed (2: No such file or directory), client: 129.227.129.178, server: 131.196.8.4, request: "GET /.well-known/security.txt HTTP/1.1", host: "131.196.8.4:8001"
+2021/07/31 03:18:45 [error] 3041896#3041896: *527 open() "/home/megaspeed/django-apps/gateway/.well-known/security.txt" failed (2: No such file or directory), client: 125.64.94.136, server: 131.196.8.4, request: "GET /.well-known/security.txt HTTP/1.1", host: "131.196.8.4:8001"
+2021/10/28 12:32:49 [error] 3041896#3041896: *2096 connect() failed (111: Connection refused) while connecting to upstream, client: 181.199.63.153, server: 131.196.8.4, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "131.196.8.4:8001"
+2021/11/27 16:18:26 [error] 3041896#3041896: *6354 open() "/home/megaspeed/django-apps/gateway/static/rest_framework/css/bootstrap.min.css.map" failed (2: No such file or directory), client: 181.199.54.108, server: 131.196.8.4, request: "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1", host: "131.196.8.4:8001"

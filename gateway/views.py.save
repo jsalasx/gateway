@@ -1,0 +1,33 @@
+from gateway.models import mensajesModel
+from gateway.serialization import Serializationclass
+from rest_framework.response import Response
+from rest_framework import status
+from rest_framework.decorators import api_view
+
+from django.shortcuts import render
+http://131.196.8.4:8000/
+
+@api_view(['GET'])
+def showMensajes(request):
+    if request.method == 'GET':
+        results=mensajesModel.objects.all()
+        serialize=Serializationclass(results,many=True)
+        return Response(serialize.data)
+
+@api_view(['POST'])
+def saveMensajes(request):
+    if request.method== 'POST':
+        saveserialize=Serializationclass(data=request.data)
+        if saveserialize.is_valid():
+            saveserialize.save()
+            return Response(saveserialize.data,status=status.HTTP_201_CREATED)
+            return Response(saveserialize.data,status=status.HTTP_400_BAD_REQUEST)
+
+
+def insertMensajes(request):
+    if request.method=="POST":
+        mensaje=request.POST.get('mensaje')
+        data={"mensaje": mensaje}
+        headers= {'Content-Type': 'application/json'}
+        read=request.post('http://127.0.0.1:8000/Insert',json=data,headers=headers)
+        return render(request,"")

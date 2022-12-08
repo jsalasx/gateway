@@ -1,0 +1,1016 @@
+[2021-04-28 02:54:19 +0000] [330114] [INFO] Starting gunicorn 20.1.0
+[2021-04-28 02:54:19 +0000] [330114] [INFO] Listening at: http://127.0.0.1:8000 (330114)
+[2021-04-28 02:54:19 +0000] [330114] [INFO] Using worker: sync
+[2021-04-28 02:54:19 +0000] [330117] [INFO] Booting worker with pid: 330117
+Not Found: /
+Not Found: /favicon.ico
+[2021-04-28 03:17:17 +0000] [330114] [INFO] Handling signal: term
+[2021-04-28 03:17:17 +0000] [330117] [INFO] Worker exiting (pid: 330117)
+[2021-04-28 03:17:17 +0000] [330114] [INFO] Shutting down: Master
+[2021-04-28 03:20:56 +0000] [332802] [INFO] Starting gunicorn 20.1.0
+[2021-04-28 03:20:56 +0000] [332802] [INFO] Listening at: http://127.0.0.1:8000 (332802)
+[2021-04-28 03:20:56 +0000] [332802] [INFO] Using worker: sync
+[2021-04-28 03:20:56 +0000] [332805] [INFO] Booting worker with pid: 332805
+[2021-04-27 23:43:00 +0000] [332802] [CRITICAL] WORKER TIMEOUT (pid:332805)
+[2021-04-27 23:43:00 +0000] [332805] [INFO] Worker exiting (pid: 332805)
+[2021-04-27 23:43:00 +0000] [336953] [INFO] Booting worker with pid: 336953
+[2021-04-28 04:42:36 +0000] [332802] [CRITICAL] WORKER TIMEOUT (pid:336953)
+[2021-04-28 04:42:36 +0000] [336953] [INFO] Worker exiting (pid: 336953)
+[2021-04-28 04:42:36 +0000] [337223] [INFO] Booting worker with pid: 337223
+[2021-04-28 05:00:00 +0000] [332802] [CRITICAL] WORKER TIMEOUT (pid:337223)
+[2021-04-28 05:00:00 +0000] [337223] [INFO] Worker exiting (pid: 337223)
+[2021-04-28 05:00:00 +0000] [338469] [INFO] Booting worker with pid: 338469
+[2021-04-28 05:01:24 +0000] [332802] [CRITICAL] WORKER TIMEOUT (pid:338469)
+[2021-04-28 05:01:24 +0000] [338469] [INFO] Worker exiting (pid: 338469)
+[2021-04-28 05:01:25 +0000] [338820] [INFO] Booting worker with pid: 338820
+Not Found: /status
+Not Found: /stat
+Not Found: /status
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /status
+Not Found: /stat
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /system_api.php
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /client_area/
+Not Found: /stalker_portal/c/
+Not Found: /stream/live.php
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: '67683459'. You may need to add '67683459' to ALLOWED_HOSTS.
+Bad Request: /console/login/LoginForm.jsp
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: //recordings/index.php
+Not Found: //html/recordings/index.php
+Not Found: //fpbx/recordings/index.php
+Not Found: //www/recordings/index.php
+Not Found: //asterisk/recordings/index.php
+Not Found: //myasterisk/recordings/index.php
+Not Found: //pbx/recordings/index.php
+Not Found: //freepbx/recordings/index.php
+Not Found: //admin/config.php
+Not Found: //html/admin/config.php
+Not Found: //recordings/index.php
+Not Found: //fpbx/admin/config.php
+Not Found: //html/recordings/index.php
+Not Found: //www/admin/config.php
+Not Found: //fpbx/recordings/index.php
+Not Found: //asterisk/admin/config.php
+Not Found: //myasterisk/admin/config.php
+Not Found: //www/recordings/index.php
+Not Found: //asterisk/recordings/index.php
+Not Found: //pbx/admin/config.php
+Not Found: //myasterisk/recordings/index.php
+Not Found: //config.php
+Not Found: //pbx/recordings/index.php
+Not Found: //config.php
+Not Found: //freepbx/recordings/index.php
+Not Found: //admin/config.php
+Not Found: //html/admin/config.php
+Not Found: //fpbx/admin/config.php
+Not Found: //www/admin/config.php
+Not Found: //asterisk/admin/config.php
+Not Found: //myasterisk/admin/config.php
+Not Found: //pbx/admin/config.php
+Not Found: //config.php
+Not Found: //config.php
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /system_api.php
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /client_area/
+Not Found: /stalker_portal/c/
+Not Found: /stream/live.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /system_api.php
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /client_area/
+Not Found: /stalker_portal/c/
+Not Found: /stream/live.php
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /system_api.php
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /client_area/
+Not Found: /stalker_portal/c/
+Not Found: /stream/live.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /nmaplowercheck1622509701
+Not Found: /robots.txt
+Not Found: /
+Not Found: /
+Not Found: /tasktracker.jsp
+Not Found: /jobtracker.jsp
+Not Found: /rs-status
+Not Found: /
+Not Found: /master.jsp
+Not Found: /browseDirectory.jsp
+Not Found: /sdk
+Not Found: /evox/about
+Not Found: /
+Not Found: /dfshealth.jsp
+Not Found: /flumemaster.jsp
+Not Found: /
+Not Found: /
+Not Found: /HNAP1
+Not Found: /
+Not Found: /status.jsp
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Method Not Allowed: /Insert/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /system_api.php
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /client_area/
+Not Found: /stalker_portal/c/
+Not Found: /stream/live.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /system_api.php
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /client_area/
+Not Found: /stalker_portal/c/
+Not Found: /stream/live.php
+Not Found: /
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Invalid HTTP_HOST header: '67683459'. You may need to add '67683459' to ALLOWED_HOSTS.
+Bad Request: /console/login/LoginForm.jsp
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /
+[2021-06-17 22:06:54 +0000] [332802] [INFO] Handling signal: term
+[2021-06-17 22:06:54 +0000] [338820] [INFO] Worker exiting (pid: 338820)
+[2021-06-17 22:06:54 +0000] [332802] [INFO] Shutting down: Master
+[2021-06-17 17:05:29 -0500] [1060] [INFO] Starting gunicorn 20.1.0
+[2021-06-17 17:05:29 -0500] [1060] [INFO] Listening at: http://127.0.0.1:8000 (1060)
+[2021-06-17 17:05:29 -0500] [1060] [INFO] Using worker: sync
+[2021-06-17 17:05:29 -0500] [1071] [INFO] Booting worker with pid: 1071
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Forbidden (CSRF cookie not set.): /admin/login/
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Invalid HTTP_HOST header: '67683459'. You may need to add '67683459' to ALLOWED_HOSTS.
+Bad Request: /console/login/LoginForm.jsp
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /vicidial/admin.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /
+Not Found: /
+Not Found: /sdk
+Not Found: /nmaplowercheck1625285237
+Not Found: /
+Not Found: /
+Not Found: /HNAP1
+Not Found: /evox/about
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /System/configurationFile
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /tokens
+Not Found: /showMensajes
+Not Found: /tokens/
+Not Found: /tokens/
+Not Found: /tokens/
+Not Found: /tokens/
+[2021-07-14 19:42:46 -0500] [1060] [INFO] Handling signal: term
+[2021-07-15 00:42:46 +0000] [1071] [INFO] Worker exiting (pid: 1071)
+[2021-07-14 19:42:46 -0500] [1060] [INFO] Shutting down: Master
+[2021-07-14 19:42:47 -0500] [3042029] [INFO] Starting gunicorn 20.1.0
+[2021-07-14 19:42:47 -0500] [3042029] [INFO] Listening at: http://127.0.0.1:8000 (3042029)
+[2021-07-14 19:42:47 -0500] [3042029] [INFO] Using worker: sync
+[2021-07-14 19:42:47 -0500] [3042032] [INFO] Booting worker with pid: 3042032
+Method Not Allowed: /tokens/
+Not Found: /favicon.ico
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /robots.txt
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Invalid HTTP_HOST header: '67683459'. You may need to add '67683459' to ALLOWED_HOSTS.
+Bad Request: /console/login/LoginForm.jsp
+Not Found: /owa/auth/x.js
+Not Found: /aaXB
+Not Found: /favicon.ico
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: '67683459'. You may need to add '67683459' to ALLOWED_HOSTS.
+Bad Request: /console/login/LoginForm.jsp
+Not Found: /status
+Not Found: /stat
+Not Found: /status
+Not Found: /stat
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /status
+Not Found: /stat
+Invalid HTTP_HOST header: '67683459'. You may need to add '67683459' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Not Found: /favicon.ico
+Not Found: /reports/rwservlet/help
+Not Found: /reports/rwservlet/showenv
+Not Found: /reports/rwservlet/showmaps
+Not Found: /reports/rwservlet/showjobs
+Not Found: /console
+Not Found: /em
+Not Found: /odsm
+Not Found: /webcenter
+Not Found: /forms/frmservlet
+Not Found: /discoverer/viewer
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /status
+Not Found: /stat
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Invalid HTTP_HOST header: '67683459'. You may need to add '67683459' to ALLOWED_HOSTS.
+Bad Request: /console/login/LoginForm.jsp
+Not Found: /favicon.ico
+Not Found: /status
+Not Found: /stat
+Not Found: /System/configurationFile
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /favicon.ico
+Not Found: /console/login/LoginForm.jsp
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Method Not Allowed: /Insert/
+Not Found: /token/
+Method Not Allowed: /tokens/
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Not Found: /favicon.ico
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Invalid HTTP_HOST header: '67683459'. You may need to add '67683459' to ALLOWED_HOSTS.
+Bad Request: /console/login/LoginForm.jsp
+Invalid HTTP_HOST header: '67683459'. You may need to add '67683459' to ALLOWED_HOSTS.
+Bad Request: /console/login/LoginForm.jsp
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: '67683459'. You may need to add '67683459' to ALLOWED_HOSTS.
+Bad Request: /console/login/LoginForm.jsp
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /status
+Not Found: /stat
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: '67683459'. You may need to add '67683459' to ALLOWED_HOSTS.
+Bad Request: /console/login/LoginForm.jsp
+Invalid HTTP_HOST header: '67683459'. You may need to add '67683459' to ALLOWED_HOSTS.
+Bad Request: /console/login/LoginForm.jsp
+Invalid HTTP_HOST header: '67683459'. You may need to add '67683459' to ALLOWED_HOSTS.
+Bad Request: /console/login/LoginForm.jsp
+Not Found: /common/info.cgi
+Not Found: /HNAP1/
+Not Found: /currentsetting.htm
+Not Found: /dniapi/userInfos
+Not Found: /status
+Not Found: /stat
+Not Found: /status
+Not Found: /stat
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /status
+Not Found: /stat
+Not Found: /.env
+Not Found: /common/info.cgi
+Not Found: /HNAP1/
+Not Found: /currentsetting.htm
+Not Found: /dniapi/userInfos
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Not Found: /favicon.ico
+Not Found: /status
+Not Found: /stat
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /common/info.cgi
+Not Found: /HNAP1/
+Not Found: /currentsetting.htm
+Not Found: /dniapi/userInfos
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /favicon.ico
+Not Found: /common/info.cgi
+Not Found: /HNAP1/
+Not Found: /currentsetting.htm
+Not Found: /dniapi/userInfos
+Not Found: /1:0:1:16A8:C3AA:9E:5A0000:0:0:0
+Not Found: /1:0:1:16A8:C3AA:9E:5A0000:0:0:0
+Not Found: /1:0:1:16A8:C3AA:9E:5A0000:0:0:0
+Not Found: /1:0:1:16A8:C3AA:9E:5A0000:0:0:0
+Not Found: /1:0:1:16A8:C3AA:9E:5A0000:0:0:0
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /common/info.cgi
+Not Found: /HNAP1/
+Not Found: /currentsetting.htm
+Not Found: /dniapi/userInfos
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Not Found: /favicon.ico
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /favicon.ico
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /gemini-iptv/vod.json
+Not Found: /gemini-iptv/get_prc.php
+Not Found: /favicon.ico
+Not Found: /show
+Not Found: /showMensajes
+Not Found: /favicon.ico
+Not Found: /showMensajes/
+Not Found: /status
+Not Found: /stat
+Not Found: /play/a097/index.m3u8
+Not Found: /play/a097/index.m3u8
+Not Found: /play/a097/index.m3u8
+Not Found: /play/a097/index.m3u8
+Not Found: /play/a097/index.m3u8
+Not Found: /status
+Not Found: /stat
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /common/info.cgi
+Not Found: /HNAP1/
+Not Found: /currentsetting.htm
+Not Found: /dniapi/userInfos
+Not Found: /favicon.ico
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Not Found: /console/login/LoginForm.jsp
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /gemini-iptv/vod.json
+Not Found: /gemini-iptv/get_prc.php
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /ShowToken
+[2021-10-28 12:32:44 -0500] [3042029] [INFO] Handling signal: term
+[2021-10-28 17:32:44 +0000] [3042032] [INFO] Worker exiting (pid: 3042032)
+[2021-10-28 12:32:44 -0500] [3042029] [INFO] Shutting down: Master
+[2021-10-28 12:33:04 -0500] [2275555] [INFO] Starting gunicorn 20.1.0
+[2021-10-28 12:33:04 -0500] [2275555] [INFO] Listening at: http://127.0.0.1:8000 (2275555)
+[2021-10-28 12:33:04 -0500] [2275555] [INFO] Using worker: sync
+[2021-10-28 12:33:04 -0500] [2275558] [INFO] Booting worker with pid: 2275558
+Method Not Allowed: /ShowToken/
+Not Found: /ADMIN
+Bad Request: /Insert/
+Bad Request: /Insert/
+Bad Request: /Insert/
+Bad Request: /Insert/
+Internal Server Error: /Insert/
+Traceback (most recent call last):
+  File "/home/megaspeed/django-apps/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/megaspeed/django-apps/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/megaspeed/django-apps/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/megaspeed/django-apps/env/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/megaspeed/django-apps/env/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/megaspeed/django-apps/env/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+Internal Server Error: /Insert/
+Traceback (most recent call last):
+  File "/home/megaspeed/django-apps/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/megaspeed/django-apps/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/megaspeed/django-apps/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/megaspeed/django-apps/env/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/megaspeed/django-apps/env/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/megaspeed/django-apps/env/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+Not Found: /favicon.ico
+Internal Server Error: /Insert/
+Traceback (most recent call last):
+  File "/home/megaspeed/django-apps/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/megaspeed/django-apps/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/megaspeed/django-apps/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/megaspeed/django-apps/env/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/megaspeed/django-apps/env/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/megaspeed/django-apps/env/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+Bad Request: /Insert/
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /status
+Not Found: /stat
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /gemini-iptv/vod.json
+Not Found: /gemini-iptv/get_prc.php
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /favicon.ico
+Not Found: /home.pl
+Not Found: /Portal/Portal.mwsl
+Not Found: /Portal0000.htm
+Not Found: /z6hD
+Not Found: /docs/cplugError.html/
+Not Found: /indice.jsp
+Not Found: /__Additional
+Not Found: /sdk
+Not Found: /nmaplowercheck1636293413
+Not Found: /CSS/Miniweb.css
+Not Found: /home.cgi
+Not Found: /pools/default/buckets
+Not Found: /HNAP1
+Not Found: /inicio.jsa
+Not Found: /pools
+Not Found: /main.asp
+Not Found: /favicon.ico
+Not Found: /home.aspx
+Not Found: /inicio.pl
+Not Found: /robots.txt
+Not Found: /readme.txt
+Invalid HTTP_HOST header: 'www'. You may need to add 'www' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /default.shtml
+Not Found: /localstart.asp
+Not Found: /admin.shtml
+Not Found: /main.jsp
+Not Found: /admin.php
+Not Found: /inicio.asp
+Not Found: /admin.jsa
+Not Found: /localstart.pl
+Not Found: /status
+Not Found: /stat
+Not Found: /favicon.ico
+Not Found: /status
+Not Found: /stat
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /gemini-iptv/vod.json
+Not Found: /gemini-iptv/get_prc.php
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /nice ports,/Trinity.txt.bak
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /gemini-iptv/vod.json
+Not Found: /gemini-iptv/get_prc.php
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /api/v2/swagger.json
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /gemini-iptv/vod.json
+Not Found: /gemini-iptv/get_prc.php
+Not Found: /swagger.json
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /v2/api-docs
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /gemini-iptv/vod.json
+Not Found: /gemini-iptv/get_prc.php
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /404/index.html
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /favicon.ico
+Not Found: /swagger/v1/swagger.json
+Not Found: /sdk
+Not Found: /home.pl
+Not Found: /Portal0000.htm
+Not Found: /nmaplowercheck1638776208
+Not Found: /inicio.jsp
+Not Found: /HNAP1
+Not Found: /__Additional
+Not Found: /pools/default/buckets
+Not Found: /main.shtml
+Not Found: /CSS/Miniweb.css
+Not Found: /4lTh
+Not Found: /pools
+Not Found: /robots.txt
+Not Found: /Portal/Portal.mwsl
+Not Found: /docs/cplugError.html/
+Not Found: /readme.txt
+Not Found: /main.php
+Not Found: /menu.jsa
+Not Found: /menu.asp
+Not Found: /admin.jsp
+Invalid HTTP_HOST header: 'www'. You may need to add 'www' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /admin.shtml
+Not Found: /index.jsp
+Not Found: /menu.pl
+Not Found: /index.jsa
+Not Found: /admin.pl
+Not Found: /inicio.jhtml
+Not Found: /admin.jsa
+Not Found: /start.cfm

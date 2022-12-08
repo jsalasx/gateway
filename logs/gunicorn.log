@@ -1,0 +1,1270 @@
+[2021-04-27 23:21:05 +0000] [297750] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/megaspeed/django-apps/gateway/gateway
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/megaspeed/django-apps/gateway/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: gateway
+  default_proc_name: :application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f04debb0040>
+  on_reload: <function OnReload.on_reload at 0x7f04debb0160>
+  when_ready: <function WhenReady.when_ready at 0x7f04debb0280>
+  pre_fork: <function Prefork.pre_fork at 0x7f04debb03a0>
+  post_fork: <function Postfork.post_fork at 0x7f04debb04c0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f04debb05e0>
+  worker_int: <function WorkerInt.worker_int at 0x7f04debb0700>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f04debb0820>
+  pre_exec: <function PreExec.pre_exec at 0x7f04debb0940>
+  pre_request: <function PreRequest.pre_request at 0x7f04debb0a60>
+  post_request: <function PostRequest.post_request at 0x7f04debb0af0>
+  child_exit: <function ChildExit.child_exit at 0x7f04debb0c10>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f04debb0d30>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f04debb0e50>
+  on_exit: <function OnExit.on_exit at 0x7f04debb0f70>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-04-27 23:21:05 +0000] [297750] [INFO] Starting gunicorn 20.1.0
+[2021-04-27 23:21:05 +0000] [297750] [DEBUG] Arbiter booted
+[2021-04-27 23:21:05 +0000] [297750] [INFO] Listening at: unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock (297750)
+[2021-04-27 23:21:05 +0000] [297750] [INFO] Using worker: sync
+[2021-04-27 23:21:05 +0000] [297753] [INFO] Booting worker with pid: 297753
+[2021-04-27 23:21:05 +0000] [297753] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1011, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 950, in _sanity_check
+ValueError: Empty module name
+[2021-04-27 23:21:05 +0000] [297753] [INFO] Worker exiting (pid: 297753)
+[2021-04-27 23:21:05 +0000] [297754] [INFO] Booting worker with pid: 297754
+[2021-04-27 23:21:05 +0000] [297754] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1011, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 950, in _sanity_check
+ValueError: Empty module name
+[2021-04-27 23:21:05 +0000] [297754] [INFO] Worker exiting (pid: 297754)
+[2021-04-27 23:21:05 +0000] [297750] [WARNING] Worker with pid 297754 was terminated due to signal 15
+[2021-04-27 23:21:05 +0000] [297750] [INFO] Shutting down: Master
+[2021-04-27 23:21:05 +0000] [297750] [INFO] Reason: Worker failed to boot.
+[2021-04-27 23:21:06 +0000] [297759] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/megaspeed/django-apps/gateway/gateway
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/megaspeed/django-apps/gateway/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: gateway
+  default_proc_name: :application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7ff3b6cb5040>
+  on_reload: <function OnReload.on_reload at 0x7ff3b6cb5160>
+  when_ready: <function WhenReady.when_ready at 0x7ff3b6cb5280>
+  pre_fork: <function Prefork.pre_fork at 0x7ff3b6cb53a0>
+  post_fork: <function Postfork.post_fork at 0x7ff3b6cb54c0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7ff3b6cb55e0>
+  worker_int: <function WorkerInt.worker_int at 0x7ff3b6cb5700>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7ff3b6cb5820>
+  pre_exec: <function PreExec.pre_exec at 0x7ff3b6cb5940>
+  pre_request: <function PreRequest.pre_request at 0x7ff3b6cb5a60>
+  post_request: <function PostRequest.post_request at 0x7ff3b6cb5af0>
+  child_exit: <function ChildExit.child_exit at 0x7ff3b6cb5c10>
+  worker_exit: <function WorkerExit.worker_exit at 0x7ff3b6cb5d30>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7ff3b6cb5e50>
+  on_exit: <function OnExit.on_exit at 0x7ff3b6cb5f70>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-04-27 23:21:06 +0000] [297759] [INFO] Starting gunicorn 20.1.0
+[2021-04-27 23:21:06 +0000] [297759] [DEBUG] Arbiter booted
+[2021-04-27 23:21:06 +0000] [297759] [INFO] Listening at: unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock (297759)
+[2021-04-27 23:21:06 +0000] [297759] [INFO] Using worker: sync
+[2021-04-27 23:21:06 +0000] [297763] [INFO] Booting worker with pid: 297763
+[2021-04-27 23:21:06 +0000] [297763] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1011, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 950, in _sanity_check
+ValueError: Empty module name
+[2021-04-27 23:21:06 +0000] [297763] [INFO] Worker exiting (pid: 297763)
+[2021-04-27 23:21:06 +0000] [297764] [INFO] Booting worker with pid: 297764
+[2021-04-27 23:21:06 +0000] [297764] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1011, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 950, in _sanity_check
+ValueError: Empty module name
+[2021-04-27 23:21:06 +0000] [297764] [INFO] Worker exiting (pid: 297764)
+[2021-04-27 23:21:06 +0000] [297759] [WARNING] Worker with pid 297764 was terminated due to signal 15
+[2021-04-27 23:21:06 +0000] [297759] [INFO] Shutting down: Master
+[2021-04-27 23:21:06 +0000] [297759] [INFO] Reason: Worker failed to boot.
+[2021-04-27 23:21:06 +0000] [297771] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/megaspeed/django-apps/gateway/gateway
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/megaspeed/django-apps/gateway/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: gateway
+  default_proc_name: :application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fa9a3e23040>
+  on_reload: <function OnReload.on_reload at 0x7fa9a3e23160>
+  when_ready: <function WhenReady.when_ready at 0x7fa9a3e23280>
+  pre_fork: <function Prefork.pre_fork at 0x7fa9a3e233a0>
+  post_fork: <function Postfork.post_fork at 0x7fa9a3e234c0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fa9a3e235e0>
+  worker_int: <function WorkerInt.worker_int at 0x7fa9a3e23700>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fa9a3e23820>
+  pre_exec: <function PreExec.pre_exec at 0x7fa9a3e23940>
+  pre_request: <function PreRequest.pre_request at 0x7fa9a3e23a60>
+  post_request: <function PostRequest.post_request at 0x7fa9a3e23af0>
+  child_exit: <function ChildExit.child_exit at 0x7fa9a3e23c10>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fa9a3e23d30>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fa9a3e23e50>
+  on_exit: <function OnExit.on_exit at 0x7fa9a3e23f70>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-04-27 23:21:06 +0000] [297771] [INFO] Starting gunicorn 20.1.0
+[2021-04-27 23:21:06 +0000] [297771] [DEBUG] Arbiter booted
+[2021-04-27 23:21:06 +0000] [297771] [INFO] Listening at: unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock (297771)
+[2021-04-27 23:21:06 +0000] [297771] [INFO] Using worker: sync
+[2021-04-27 23:21:06 +0000] [297773] [INFO] Booting worker with pid: 297773
+[2021-04-27 23:21:06 +0000] [297773] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1011, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 950, in _sanity_check
+ValueError: Empty module name
+[2021-04-27 23:21:06 +0000] [297773] [INFO] Worker exiting (pid: 297773)
+[2021-04-27 23:21:06 +0000] [297774] [INFO] Booting worker with pid: 297774
+[2021-04-27 23:21:06 +0000] [297774] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1011, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 950, in _sanity_check
+ValueError: Empty module name
+[2021-04-27 23:21:06 +0000] [297774] [INFO] Worker exiting (pid: 297774)
+[2021-04-27 23:21:06 +0000] [297771] [WARNING] Worker with pid 297774 was terminated due to signal 15
+[2021-04-27 23:21:06 +0000] [297771] [INFO] Shutting down: Master
+[2021-04-27 23:21:06 +0000] [297771] [INFO] Reason: Worker failed to boot.
+[2021-04-27 23:21:07 +0000] [297777] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/megaspeed/django-apps/gateway/gateway
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/megaspeed/django-apps/gateway/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: gateway
+  default_proc_name: :application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f017e432040>
+  on_reload: <function OnReload.on_reload at 0x7f017e432160>
+  when_ready: <function WhenReady.when_ready at 0x7f017e432280>
+  pre_fork: <function Prefork.pre_fork at 0x7f017e4323a0>
+  post_fork: <function Postfork.post_fork at 0x7f017e4324c0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f017e4325e0>
+  worker_int: <function WorkerInt.worker_int at 0x7f017e432700>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f017e432820>
+  pre_exec: <function PreExec.pre_exec at 0x7f017e432940>
+  pre_request: <function PreRequest.pre_request at 0x7f017e432a60>
+  post_request: <function PostRequest.post_request at 0x7f017e432af0>
+  child_exit: <function ChildExit.child_exit at 0x7f017e432c10>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f017e432d30>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f017e432e50>
+  on_exit: <function OnExit.on_exit at 0x7f017e432f70>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-04-27 23:21:07 +0000] [297777] [INFO] Starting gunicorn 20.1.0
+[2021-04-27 23:21:07 +0000] [297777] [DEBUG] Arbiter booted
+[2021-04-27 23:21:07 +0000] [297777] [INFO] Listening at: unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock (297777)
+[2021-04-27 23:21:07 +0000] [297777] [INFO] Using worker: sync
+[2021-04-27 23:21:07 +0000] [297779] [INFO] Booting worker with pid: 297779
+[2021-04-27 23:21:07 +0000] [297779] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1011, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 950, in _sanity_check
+ValueError: Empty module name
+[2021-04-27 23:21:07 +0000] [297779] [INFO] Worker exiting (pid: 297779)
+[2021-04-27 23:21:07 +0000] [297777] [INFO] Shutting down: Master
+[2021-04-27 23:21:07 +0000] [297777] [INFO] Reason: Worker failed to boot.
+[2021-04-27 23:21:07 +0000] [297782] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/megaspeed/django-apps/gateway/gateway
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/megaspeed/django-apps/gateway/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: gateway
+  default_proc_name: :application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fe4943a2040>
+  on_reload: <function OnReload.on_reload at 0x7fe4943a2160>
+  when_ready: <function WhenReady.when_ready at 0x7fe4943a2280>
+  pre_fork: <function Prefork.pre_fork at 0x7fe4943a23a0>
+  post_fork: <function Postfork.post_fork at 0x7fe4943a24c0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fe4943a25e0>
+  worker_int: <function WorkerInt.worker_int at 0x7fe4943a2700>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fe4943a2820>
+  pre_exec: <function PreExec.pre_exec at 0x7fe4943a2940>
+  pre_request: <function PreRequest.pre_request at 0x7fe4943a2a60>
+  post_request: <function PostRequest.post_request at 0x7fe4943a2af0>
+  child_exit: <function ChildExit.child_exit at 0x7fe4943a2c10>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fe4943a2d30>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fe4943a2e50>
+  on_exit: <function OnExit.on_exit at 0x7fe4943a2f70>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-04-27 23:21:07 +0000] [297782] [INFO] Starting gunicorn 20.1.0
+[2021-04-27 23:21:07 +0000] [297782] [DEBUG] Arbiter booted
+[2021-04-27 23:21:07 +0000] [297782] [INFO] Listening at: unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock (297782)
+[2021-04-27 23:21:07 +0000] [297782] [INFO] Using worker: sync
+[2021-04-27 23:21:07 +0000] [297784] [INFO] Booting worker with pid: 297784
+[2021-04-27 23:21:07 +0000] [297784] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1011, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 950, in _sanity_check
+ValueError: Empty module name
+[2021-04-27 23:21:07 +0000] [297784] [INFO] Worker exiting (pid: 297784)
+[2021-04-27 23:21:07 +0000] [297782] [INFO] Shutting down: Master
+[2021-04-27 23:21:07 +0000] [297782] [INFO] Reason: Worker failed to boot.
+[2021-04-27 23:21:10 +0000] [297828] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/megaspeed/django-apps/gateway/gateway
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/megaspeed/django-apps/gateway/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: gateway
+  default_proc_name: :application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f53e931f040>
+  on_reload: <function OnReload.on_reload at 0x7f53e931f160>
+  when_ready: <function WhenReady.when_ready at 0x7f53e931f280>
+  pre_fork: <function Prefork.pre_fork at 0x7f53e931f3a0>
+  post_fork: <function Postfork.post_fork at 0x7f53e931f4c0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f53e931f5e0>
+  worker_int: <function WorkerInt.worker_int at 0x7f53e931f700>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f53e931f820>
+  pre_exec: <function PreExec.pre_exec at 0x7f53e931f940>
+  pre_request: <function PreRequest.pre_request at 0x7f53e931fa60>
+  post_request: <function PostRequest.post_request at 0x7f53e931faf0>
+  child_exit: <function ChildExit.child_exit at 0x7f53e931fc10>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f53e931fd30>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f53e931fe50>
+  on_exit: <function OnExit.on_exit at 0x7f53e931ff70>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-04-27 23:21:10 +0000] [297828] [INFO] Starting gunicorn 20.1.0
+[2021-04-27 23:21:10 +0000] [297828] [DEBUG] Arbiter booted
+[2021-04-27 23:21:10 +0000] [297828] [INFO] Listening at: unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock (297828)
+[2021-04-27 23:21:10 +0000] [297828] [INFO] Using worker: sync
+[2021-04-27 23:21:10 +0000] [297843] [INFO] Booting worker with pid: 297843
+[2021-04-27 23:21:10 +0000] [297843] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1011, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 950, in _sanity_check
+ValueError: Empty module name
+[2021-04-27 23:21:10 +0000] [297843] [INFO] Worker exiting (pid: 297843)
+[2021-04-27 23:21:10 +0000] [297828] [INFO] Shutting down: Master
+[2021-04-27 23:21:10 +0000] [297828] [INFO] Reason: Worker failed to boot.
+[2021-04-27 23:21:11 +0000] [297847] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/megaspeed/django-apps/gateway/gateway
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/megaspeed/django-apps/gateway/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: gateway
+  default_proc_name: :application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f0520f5e040>
+  on_reload: <function OnReload.on_reload at 0x7f0520f5e160>
+  when_ready: <function WhenReady.when_ready at 0x7f0520f5e280>
+  pre_fork: <function Prefork.pre_fork at 0x7f0520f5e3a0>
+  post_fork: <function Postfork.post_fork at 0x7f0520f5e4c0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f0520f5e5e0>
+  worker_int: <function WorkerInt.worker_int at 0x7f0520f5e700>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f0520f5e820>
+  pre_exec: <function PreExec.pre_exec at 0x7f0520f5e940>
+  pre_request: <function PreRequest.pre_request at 0x7f0520f5ea60>
+  post_request: <function PostRequest.post_request at 0x7f0520f5eaf0>
+  child_exit: <function ChildExit.child_exit at 0x7f0520f5ec10>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f0520f5ed30>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f0520f5ee50>
+  on_exit: <function OnExit.on_exit at 0x7f0520f5ef70>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-04-27 23:21:11 +0000] [297847] [INFO] Starting gunicorn 20.1.0
+[2021-04-27 23:21:11 +0000] [297847] [DEBUG] Arbiter booted
+[2021-04-27 23:21:11 +0000] [297847] [INFO] Listening at: unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock (297847)
+[2021-04-27 23:21:11 +0000] [297847] [INFO] Using worker: sync
+[2021-04-27 23:21:11 +0000] [297849] [INFO] Booting worker with pid: 297849
+[2021-04-27 23:21:11 +0000] [297849] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1011, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 950, in _sanity_check
+ValueError: Empty module name
+[2021-04-27 23:21:11 +0000] [297850] [INFO] Booting worker with pid: 297850
+[2021-04-27 23:21:11 +0000] [297849] [INFO] Worker exiting (pid: 297849)
+[2021-04-27 23:21:11 +0000] [297850] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1011, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 950, in _sanity_check
+ValueError: Empty module name
+[2021-04-27 23:21:11 +0000] [297850] [INFO] Worker exiting (pid: 297850)
+[2021-04-27 23:21:11 +0000] [297847] [WARNING] Worker with pid 297850 was terminated due to signal 15
+[2021-04-27 23:21:11 +0000] [297847] [INFO] Shutting down: Master
+[2021-04-27 23:21:11 +0000] [297847] [INFO] Reason: Worker failed to boot.
+[2021-04-27 23:21:11 +0000] [297854] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/megaspeed/django-apps/gateway/gateway
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/megaspeed/django-apps/gateway/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: gateway
+  default_proc_name: :application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f4fdde33040>
+  on_reload: <function OnReload.on_reload at 0x7f4fdde33160>
+  when_ready: <function WhenReady.when_ready at 0x7f4fdde33280>
+  pre_fork: <function Prefork.pre_fork at 0x7f4fdde333a0>
+  post_fork: <function Postfork.post_fork at 0x7f4fdde334c0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f4fdde335e0>
+  worker_int: <function WorkerInt.worker_int at 0x7f4fdde33700>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f4fdde33820>
+  pre_exec: <function PreExec.pre_exec at 0x7f4fdde33940>
+  pre_request: <function PreRequest.pre_request at 0x7f4fdde33a60>
+  post_request: <function PostRequest.post_request at 0x7f4fdde33af0>
+  child_exit: <function ChildExit.child_exit at 0x7f4fdde33c10>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f4fdde33d30>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f4fdde33e50>
+  on_exit: <function OnExit.on_exit at 0x7f4fdde33f70>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-04-27 23:21:11 +0000] [297854] [INFO] Starting gunicorn 20.1.0
+[2021-04-27 23:21:11 +0000] [297854] [DEBUG] Arbiter booted
+[2021-04-27 23:21:11 +0000] [297854] [INFO] Listening at: unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock (297854)
+[2021-04-27 23:21:11 +0000] [297854] [INFO] Using worker: sync
+[2021-04-27 23:21:11 +0000] [297856] [INFO] Booting worker with pid: 297856
+[2021-04-27 23:21:11 +0000] [297856] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1011, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 950, in _sanity_check
+ValueError: Empty module name
+[2021-04-27 23:21:11 +0000] [297856] [INFO] Worker exiting (pid: 297856)
+[2021-04-27 23:21:11 +0000] [297854] [INFO] Shutting down: Master
+[2021-04-27 23:21:11 +0000] [297854] [INFO] Reason: Worker failed to boot.
+[2021-04-27 23:21:12 +0000] [297860] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/megaspeed/django-apps/gateway/gateway
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/megaspeed/django-apps/gateway/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: gateway
+  default_proc_name: :application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fbd11e84040>
+  on_reload: <function OnReload.on_reload at 0x7fbd11e84160>
+  when_ready: <function WhenReady.when_ready at 0x7fbd11e84280>
+  pre_fork: <function Prefork.pre_fork at 0x7fbd11e843a0>
+  post_fork: <function Postfork.post_fork at 0x7fbd11e844c0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fbd11e845e0>
+  worker_int: <function WorkerInt.worker_int at 0x7fbd11e84700>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fbd11e84820>
+  pre_exec: <function PreExec.pre_exec at 0x7fbd11e84940>
+  pre_request: <function PreRequest.pre_request at 0x7fbd11e84a60>
+  post_request: <function PostRequest.post_request at 0x7fbd11e84af0>
+  child_exit: <function ChildExit.child_exit at 0x7fbd11e84c10>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fbd11e84d30>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fbd11e84e50>
+  on_exit: <function OnExit.on_exit at 0x7fbd11e84f70>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-04-27 23:21:12 +0000] [297860] [INFO] Starting gunicorn 20.1.0
+[2021-04-27 23:21:12 +0000] [297860] [DEBUG] Arbiter booted
+[2021-04-27 23:21:12 +0000] [297860] [INFO] Listening at: unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock (297860)
+[2021-04-27 23:21:12 +0000] [297860] [INFO] Using worker: sync
+[2021-04-27 23:21:12 +0000] [297862] [INFO] Booting worker with pid: 297862
+[2021-04-27 23:21:12 +0000] [297862] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1011, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 950, in _sanity_check
+ValueError: Empty module name
+[2021-04-27 23:21:12 +0000] [297862] [INFO] Worker exiting (pid: 297862)
+[2021-04-27 23:21:12 +0000] [297860] [INFO] Shutting down: Master
+[2021-04-27 23:21:12 +0000] [297860] [INFO] Reason: Worker failed to boot.
+[2021-04-27 23:21:12 +0000] [297865] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/megaspeed/django-apps/gateway/gateway
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/megaspeed/django-apps/gateway/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: gateway
+  default_proc_name: :application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fd929a41040>
+  on_reload: <function OnReload.on_reload at 0x7fd929a41160>
+  when_ready: <function WhenReady.when_ready at 0x7fd929a41280>
+  pre_fork: <function Prefork.pre_fork at 0x7fd929a413a0>
+  post_fork: <function Postfork.post_fork at 0x7fd929a414c0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fd929a415e0>
+  worker_int: <function WorkerInt.worker_int at 0x7fd929a41700>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fd929a41820>
+  pre_exec: <function PreExec.pre_exec at 0x7fd929a41940>
+  pre_request: <function PreRequest.pre_request at 0x7fd929a41a60>
+  post_request: <function PostRequest.post_request at 0x7fd929a41af0>
+  child_exit: <function ChildExit.child_exit at 0x7fd929a41c10>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fd929a41d30>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fd929a41e50>
+  on_exit: <function OnExit.on_exit at 0x7fd929a41f70>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-04-27 23:21:12 +0000] [297865] [INFO] Starting gunicorn 20.1.0
+[2021-04-27 23:21:12 +0000] [297865] [DEBUG] Arbiter booted
+[2021-04-27 23:21:12 +0000] [297865] [INFO] Listening at: unix:/home/megaspeed/django-apps/gateway/sock/gunicorn.sock (297865)
+[2021-04-27 23:21:12 +0000] [297865] [INFO] Using worker: sync
+[2021-04-27 23:21:12 +0000] [297867] [INFO] Booting worker with pid: 297867
+[2021-04-27 23:21:12 +0000] [297867] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1011, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 950, in _sanity_check
+ValueError: Empty module name
+[2021-04-27 23:21:12 +0000] [297867] [INFO] Worker exiting (pid: 297867)
+[2021-04-27 23:21:12 +0000] [297868] [INFO] Booting worker with pid: 297868
+[2021-04-27 23:21:12 +0000] [297868] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1011, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 950, in _sanity_check
+ValueError: Empty module name
+[2021-04-27 23:21:12 +0000] [297868] [INFO] Worker exiting (pid: 297868)
+[2021-04-27 23:21:12 +0000] [297865] [WARNING] Worker with pid 297868 was terminated due to signal 15
+[2021-04-27 23:21:12 +0000] [297865] [INFO] Shutting down: Master
+[2021-04-27 23:21:12 +0000] [297865] [INFO] Reason: Worker failed to boot.
