@@ -15,16 +15,30 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+
 from . import views
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
 
 urlpatterns = [
+    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('admin/', admin.site.urls),
-    path('Show/',views.showMensajes, name="showMensajes"),
-    path('Insert/',views.saveMensajes, name="saveMensajes"),
-    path('Insert2/',views.saveAuxiliar, name="saveAuxiliar"),
-    path('ShowAux/',views.showAuxiliar, name="showAuxiliar"),
-    path('',views.mensajesTable.as_view()),
+    path('Show/', views.showMensajesUltimos, name="showMensajes"),
+    path('ShowMensajesUltimos/', views.showMensajesUltimos,
+         name="showMensajesUltimos"),
+    path('ShowWithToken/', views.showMensajesWithToken,
+         name="showMensajesWithToken"),
+    path('ShowWithTokenMovil/', views.showMensajesWithTokenMovil,
+         name="showMensajesWithTokenMovil"),
+    path('AddMensajesLeidos/', views.AddMensajesLeidos, name="AddMensajesLeidos"),
+    path('Insert/', views.saveMensajes.as_view(), name="saveMensajes"),
+    path('Insert2/', views.saveAuxiliar, name="saveAuxiliar"),
+    path('ShowAux/', views.showAuxiliar, name="showAuxiliar"),
+    path('', views.showMensajes),
     path('auxiliar/<int:pk>', views.updateAuxiliar),
     path('tokens/', views.saveToken, name="saveToken"),
-    path('ShowToken/',views.showToken, name="showToken")
+    path('ShowToken/', views.showToken.as_view(), name="showToken")
 ]

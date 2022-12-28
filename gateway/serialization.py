@@ -2,6 +2,7 @@ from rest_framework import serializers
 from gateway.models import mensajesModel
 from gateway.models import auxiliarModel
 from gateway.models import tokensModel
+from gateway.models import tokenMensajes
 
 class Serializationclass(serializers.ModelSerializer):
     class Meta:
@@ -19,3 +20,7 @@ class SerializationclassTokens(serializers.ModelSerializer):
         model= tokensModel
         fields= '__all__'
 
+class SerializationclassTokenMensajes(serializers.ModelSerializer):
+    class Meta:
+        model = tokenMensajes
+        fields: '__all__'
